@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Kumar S - Gamer Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .course-box {
+  background: rgba(255, 0, 100, 0.1);
+  border: 2px solid #ff007f;
+  box-shadow: 0 0 15px #ff007f, inset 0 0 10px #ff007f;
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+}
+.course-box:hover {
+  box-shadow: 0 0 25px #00ffe0, inset 0 0 15px #00ffe0;
+  transform: scale(1.02);
+}
+.course-list li {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px #00ffe0;
+}
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background-size: 300% 300%;
+      animation: neonBG 10s ease infinite;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    @keyframes neonBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(20, 20, 40, 0.9);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 0 30px #00ffe0;
+      border: 2px solid #00ffe0;
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ff007f;
+      box-shadow: 0 0 25px #ff007f;
+      transition: transform 0.4s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.1);
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00ffe0;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 8px #00ffe0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #ff007f;
+      margin-bottom: 1rem;
+      border-bottom: 3px dashed #00ffe0;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      list-style: square;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+      color: #e2e8f0;
+    }
+    .info-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    .download-btn {
+      margin-top: 3rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background: #ff007f;
+      color: white;
+      border: 2px solid #00ffe0;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00ffe0;
+      transition: all 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #00ffe0;
+      color: #000;
+      transform: scale(1.1);
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+    }
+    @media(min-width: 768px) {
+      .header {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-img" />
+      <div>
+        <h1>Sachin Kumar S</h1>
+        <p><em>"Leveling up in Life & Code | Future Game Dev Star"</em></p>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+      <div>
+        <h2>Personal Information</h2>
+        <ul>
+          <li><strong>Name:</strong> Sachin Kumar S</li>
+          <li><strong>Date of Birth:</strong> 15/07/2005</li>
+          <li><strong>Address:</strong> 3/163, Sara Nagar 3rd Street, Iravathanallur, Madurai-9</li>
+          <li><strong>Email:</strong> sach61621@gmail.com</li>
+          <li><strong>Phone:</strong> 80725 43331</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Educational Details</h2>
+        <ul>
+          <li><strong>School Name:</strong> Annamalaiyaar Matric Hr. Sec. School</li>
+          <li><strong>Passed Out:</strong> 2020</li>
+          <li><strong>Mark Percentage:</strong> 60%</li>
+        </ul>
+      </div>
+    </div>
+
+<!-- Courses Section -->
+<div class="info-section">
+    <div class="course-box">
+      <h2>Completed Courses</h2>
+      <ul class="course-list">
+        <li>Web Designing</li>
+        <li>Shell Scripting</li>
+        <li>Machine Learning</li>
+        <li>AI Features</li>
+        <li>C Programming</li>
+        <li>Python Programming</li>
+        <li>Photoshop</li>
+      </ul>
+    </div>
+  </div>
+  
+<!-- Footer Button -->
+    <div style="text-align:center">
+      <button onclick="window.print()" class="download-btn">Download as PDF</button>
+    </div>
+  </div>
+</body>
+</html>
